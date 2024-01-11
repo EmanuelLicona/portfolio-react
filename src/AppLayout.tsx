@@ -1,7 +1,17 @@
-export const AppLayout = () => {
+import { ReactNode } from 'react'
+import { Header } from './components/Header'
+export const AppLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      layout
+      <div
+        className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24
+			[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
+      ></div>
+
+      <Header />
+
+      {children}
+
     </>
   )
 }
