@@ -2,6 +2,7 @@ import { AppLayout } from '../AppLayout'
 import { MainSection } from './sections/MainSection'
 import { ProjectSection } from './sections/ProjectSection'
 import { AboutMeSection } from './sections/AboutMeSection';
+import { ReturnStart } from '../components/ReturnStart';
 
 export const Home = () => {
   return (
@@ -15,7 +16,7 @@ export const Home = () => {
 
         <ProjectSection />
 
-
+        <ReturnStart />
       </main>
     </AppLayout>
   )

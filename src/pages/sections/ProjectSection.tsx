@@ -9,7 +9,7 @@ export const ProjectSection = () => {
         text-gray-900 
         dark:text-white"
       >
-        Projectos hechos
+        Projectos Realizados
       </h3>
 
 

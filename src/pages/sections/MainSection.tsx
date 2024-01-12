@@ -8,7 +8,7 @@ import './mainSection.css'
 
 export const MainSection = () => {
   return (
-    <SectionContainer id="main" className="py-44 pb-32 flex">
+    <SectionContainer id="main" className="py-44 pb-32 flex ">
       <article>
         <h1
           className="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 text-pretty"
@@ -55,7 +55,7 @@ export const MainSection = () => {
       </article>
 
       <img
-        className="img_profile rounded-full size-4/12 mb-4 hover:scale-105 transition"
+        className="img_profile rounded-full size-3/12 mb-4 hover:scale-105 transition"
         src="/img_perfil.webp"
         alt="abdiel photo"
       />
