@@ -25,13 +25,13 @@ export const ProjectSection = () => {
         text-gray-900 
         dark:text-white"
       >
-        Projectos Realizados
+        Projectos Destacados
       </h3>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2  lg:grid-cols-3 pt-7 ">
         {
           projects.map((project, index) => (
-            <article key={index} className="border max-h-[300px]  flex flex-col p-2
+            <article key={index} className="border min-[300px] max-h-[300px]  flex flex-col p-2
               bg-white/5 
               border-gray-200 rounded-md
               dark:border-gray-700 

@@ -19,7 +19,8 @@ export const Header = () => {
       px-3 py-1
       sm:flex flex-row items-center
       bg-neutral-200 dark:bg-neutral-800/50
-      backdrop-blur-2xl"
+      backdrop-blur-2xl
+      "
       >
         <a
           className="hover:bg-white/10 rounded-full px-3 transition"
