@@ -5,9 +5,8 @@ export const ReturnStart = () => {
 
     <a
       className='
-
         arrow__start
-        fixed 
+        fixed
         bottom-5 right-5
         md:bottom-20 p-2 md:right-20 
         rounded-md border-[1px] border-white

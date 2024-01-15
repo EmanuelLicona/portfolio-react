@@ -30,15 +30,13 @@ export const Header = () => {
           className="hover:bg-white/10 rounded-full px-3 transition"
           href="#experience">Experiencia</a
         >
-        <a className="hover:bg-white/10 rounded-full px-3 transition" href="#proyectos"
+        <a className="hover:bg-white/10 rounded-full px-3 transition" href="#projects"
         >Proyectos</a
         >
-        <a className="hover:bg-white/10 rounded-full px-3 transition" href="#sobre-mi"
+        <a className="hover:bg-white/10 rounded-full px-3 transition" href="#about"
         >Sobre mí</a
         >
-        <a className="hover:bg-white/10 rounded-full px-3 transition" href="#contacto"
-        >Contacto</a
-        >
+      
 
         {/* TODO select language */}
 

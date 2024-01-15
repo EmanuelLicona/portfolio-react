@@ -14,11 +14,13 @@ export const ModalProject = () => {
   return (
 
     // Background
-    <div className={`${isOpen ? 'block' : 'hidden'} fixed inset-0 z-40 bg-black/80`}>
+    <div className={`${isOpen ? 'block ' : 'hidden'} fixed inset-0 z-40 bg-black/80`}>
 
       {/* Modal */}
 
       <div className="
+          animate__animated
+          animate__fadeIn
           absolute
 
           w-full
