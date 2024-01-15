@@ -13,7 +13,6 @@ export const AppLayout = ({ children }: { children: ReactNode }) => {
 
         <Header />
 
-        <Sidebar />
 
         {children}
 

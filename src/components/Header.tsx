@@ -1,3 +1,4 @@
+import { MobileMenu } from './MobileMenu'
 
 export const Header = () => {
   return (
@@ -9,6 +10,7 @@ export const Header = () => {
     w-full xl:w-[1120px]
     z-10"
     >
+      <MobileMenu />
 
       <nav
         className="navbar

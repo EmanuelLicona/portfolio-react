@@ -1,0 +1,16 @@
+.menu__mobile {
+  animation: blur linear 0.5s;
+  animation-timeline: scroll();
+  animation-range: 0px 500px;
+}
+
+@keyframes blur {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
