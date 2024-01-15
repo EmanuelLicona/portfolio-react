@@ -10,13 +10,12 @@ export const Header = () => {
     z-10"
     >
 
-
-
       <nav
         className="navbar
+        hidden
     border border-black rounded-full
       px-3 py-1
-      flex flex-row items-center
+      sm:flex flex-row items-center
       bg-neutral-200 dark:bg-neutral-800/50
       backdrop-blur-2xl"
       >
@@ -57,6 +56,7 @@ export const Header = () => {
 
 
       </nav>
+
 
     </header>
 

@@ -4,7 +4,24 @@
 
 
 html {
+  font-family: 'Onest Variable', system-ui, sans-serif;
+
   color-scheme: dark;
   scroll-behavior: smooth;
   color: white;
+}
+
+/* Para navegadores basados en WebKit (como Chrome y Safari) */
+.scrollbar_style::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra de desplazamiento */
+}
+
+.scrollbar_style::-webkit-scrollbar-thumb {
+  background-color: #cc89e3; /* Color del thumb (la parte móvil) */
+  border-radius: 6px; /* Bordes redondeados */
+}
+
+.scrollbar_style::-webkit-scrollbar-track {
+  background-color: #e0e0e0; /* Color de la pista (la parte inmóvil) */
+  border-radius: 6px; /* Bordes redondeados */
 }

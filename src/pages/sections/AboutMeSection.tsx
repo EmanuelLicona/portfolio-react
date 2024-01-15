@@ -3,7 +3,7 @@ import { CheckIcon } from '../../components/icons/CheckIcon'
 
 export const AboutMeSection = () => {
   return (
-    <SectionContainer id="experience" className="mt-28">
+    <SectionContainer id="experience" className="md:mt-28">
       <h3 className="
         text-3xl md:text-4xl 
         lg:text-5xl font-bold 
@@ -84,9 +84,9 @@ export const AboutMeSection = () => {
       </h4>
 
 
-      <section className="flex justify-between pt-7">
+      <section className=" md:flex  md:justify-between pt-7">
 
-        <article className='border w-1/3 p-4 rounded-xl shadow-lg shadow-purple-300
+        <article className='border md:w-1/3 p-4 rounded-xl shadow-lg shadow-purple-300
           hover:-rotate-2
           duration-500
           ease-in-out
@@ -108,8 +108,9 @@ export const AboutMeSection = () => {
             </li>
           </ul>
         </article>
-        <article className='border w-1/3 p-4 rounded-xl shadow-lg shadow-purple-300
-          hover:-rotate-2
+
+        <article className='border w-1/3 p-4 mx-4 rounded-xl shadow-lg shadow-purple-300
+          hover:scale-110
           duration-500
           ease-in-out
         '>
@@ -130,8 +131,9 @@ export const AboutMeSection = () => {
             </li>
           </ul>
         </article>
+        
         <article className='border w-1/3 p-4 rounded-xl shadow-lg shadow-purple-300
-          hover:-rotate-2
+          hover:rotate-2
           duration-500
           ease-in-out
         '>

@@ -4,6 +4,7 @@
   animation-timeline: scroll();
   animation-range: 500px 1000px;
   pointer-events: none;
+  z-index: 10;
 }
 
 @keyframes fadeIn {

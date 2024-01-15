@@ -5,8 +5,11 @@ export const ReturnStart = () => {
 
     <a
       className='
-        arrow__start 
-        fixed bottom-10 p-2 right-10 
+
+        arrow__start
+        fixed 
+        bottom-5 right-5
+        md:bottom-20 p-2 md:right-20 
         rounded-md border-[1px] border-white
         hover:bg-white hover:text-black
         '
