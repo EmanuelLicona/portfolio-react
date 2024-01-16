@@ -26,6 +26,8 @@ export const ProjectSection = () => {
 
 
   const openModal = (projectName: string) => {
+    console.log(projectName);
+    
     const project = projects.find(project => project.name === projectName)
     if (project) {
       selectProjectModal(project)

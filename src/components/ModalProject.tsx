@@ -8,6 +8,8 @@ export const ModalProject = () => {
 
   const { name, description, isOpen, technologies, images } = modalState
 
+
+
   const handleCloseModal = () => {
     closeModal()
   }
@@ -44,7 +46,7 @@ export const ModalProject = () => {
 
         {/* Content */}
         <div className=' h-[100px] sm:h-fit overflow-hidden  overflow-y-scroll  scrollbar_style '>
-          <p className='  max-h-[20px]:'>{description}</p>
+          <p className=''>{description}</p>
 
           {
             technologies.length > 0 &&

@@ -83,7 +83,7 @@ const es = {
   // Education
   education: {
     title: 'Educación',
-    description1: 'Actualmente, estoy termiando mi carrera en ingeniería en computación, fusionando conocimientos académicos con habilidades prácticas.',
+    description1: 'Actualmente, estoy finalizando mi carrera en ingeniería en computación, fusionando conocimientos académicos con habilidades prácticas.',
     description2: 'Como autodidacta comprometido, me esfuerzo por integrar las últimas tecnologías en mis proyectos, incluyendo medidas de integración continua y despliegue para garantizar la calidad del software.'
   },
 

@@ -4,6 +4,7 @@ import './ImageCarousel.css'
 
 export const ImageCarousel = ({ images = [] }: { images: string[] }) => {
   const [slide, setSlide] = useState(0)
+
   
   if (images.length === 0) return <img className='w-full max-h-[200px]' src="https://placehold.co/300x180?text=Image+not+found" alt="" />
   
