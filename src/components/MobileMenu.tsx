@@ -1,9 +1,15 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { MenuIcon } from './icons/MenuIcon'
 import './mobileMenu.css'
+import { I18nContext } from '../context/I18nProvider'
 
 export const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
+
+  const contextLang = useContext(I18nContext)
+  if (contextLang === null) {
+    throw new Error('I18nContext not found')
+  }
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -36,8 +42,10 @@ export const MobileMenu = () => {
         shadow-white/30
       `}>
         <ul className='flex flex-col items-center gap-5'>
-          <li className='hover:underline' onClick={toggleMenu}><a href="#main"> Home </a></li>
-          <li className='hover:underline' onClick={toggleMenu}><a href="#experience"> About </a></li>
+          <li className='hover:underline' onClick={toggleMenu}><a href="#"> {contextLang.t.translate("header.home")} </a></li>
+          <li className='hover:underline' onClick={toggleMenu}><a href="#about"> {contextLang.t.translate("header.about")} </a></li>
+          <li className='hover:underline' onClick={toggleMenu}><a href="#experience"> {contextLang.t.translate("header.experience")} </a></li>
+          <li className='hover:underline' onClick={toggleMenu}><a href="#projects"> {contextLang.t.translate("header.projects")} </a></li>
           <li>
             <select
               className="
@@ -47,17 +55,21 @@ export const MobileMenu = () => {
                       bg-neutral-200 dark:bg-neutral-800/50
                       backdrop-blur-2xl
                       "
+
+              value={contextLang.language}
+              onChange={(e) => contextLang.changeLanguage(e.target.value)}
+
             >
-              <option value="es">ES </option>
-              <option value="en">EN</option>
+              <option value="es">{contextLang.t.translate("languages.es")}</option>
+              <option value="en">{contextLang.t.translate("languages.en")}</option>
+
             </select>
 
           </li>
         </ul>
 
         <div className='absolute  bottom-4 left-0 right-0 flex justify-center'>
-
-        <button className='border px-4 rounded-2xl hover:bg-white/20' onClick={toggleMenu}>CLOSE</button>
+          <button className='border px-4 rounded-2xl hover:bg-white/20' onClick={toggleMenu}>CLOSE</button>
         </div>
       </div>
     </>

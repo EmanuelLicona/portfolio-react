@@ -1,5 +1,6 @@
 
 export const MenuIcon = ({className = ''}: {className?: string}) => {
+  
   return (
     <svg xmlns="http://www.w3.org/2000/svg" 
     className={` ${className} icon icon-tabler icon-tabler-menu-2`} 

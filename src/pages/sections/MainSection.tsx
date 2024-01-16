@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import { SectionContainer } from '../../components/SectionContainer'
 import { SocialPill } from '../../components/SocialPill'
 import { EmailIcon } from '../../components/icons/EmailIcon'
@@ -5,8 +6,15 @@ import { GitHubIcon } from '../../components/icons/GitHubIcon'
 import { LinkedinIcon } from '../../components/icons/LinkedinIcon'
 
 import './mainSection.css'
+import { I18nContext } from '../../context/I18nProvider'
 
 export const MainSection = () => {
+
+  const contextLang = useContext(I18nContext)
+  if (contextLang === null) {
+    throw new Error('I18nContext not found')
+  }
+
   return (
     <SectionContainer id="main" className="md:py-44 md:pb-32">
       <div className='flex flex-col md:flex-row  justify-around'>
@@ -15,7 +23,8 @@ export const MainSection = () => {
           <h1
             className="text-gray-900  dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 text-pretty"
           >
-            Hola, soy Emanuel Licona <a
+            { contextLang.t.translate("main.title") }
+            <a
               href="https://linkedin.com/in/midudev"
               target="_blank"
               rel="noopener"
@@ -27,16 +36,19 @@ export const MainSection = () => {
           <h2
             className="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
           >
-            <span>+1 años de experiencia.</span><span
+            <span>{ contextLang.t.translate("main.description1") }</span><span
               className="text-yellow-800 dark:text-yellow-200"
             >
-              Desarrollador Web Backend y Frontend</span
-            >
+              { contextLang.t.translate("main.description2") }
+              </span>
             .<span className="text-red-800 dark:text-red-200">
-              De La Ceiba, Honduras</span
-            >.
+              { contextLang.t.translate("main.description3") }
+              </span
+            >
             <span className="text-sky-800 dark:text-sky-200"
-            >Especializado en crear aplicaciones únicas.</span
+            >
+              { contextLang.t.translate("main.description4") }
+              </span
             >
           </h2>
         </article>
@@ -59,7 +71,7 @@ export const MainSection = () => {
             <GitHubIcon className="" />
             GitHub
           </SocialPill>
-          
+
           <SocialPill href="mailto:miduga@gmail.com">
             <EmailIcon className="" />
             emanuel.licona02@gmail.com
