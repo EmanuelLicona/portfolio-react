@@ -14,6 +14,8 @@ html {
 /* Para navegadores basados en WebKit (como Chrome y Safari) */
 .scrollbar_style::-webkit-scrollbar {
   width: 5px; /* Ancho de la barra de desplazamiento */
+
+ 
 }
 
 .scrollbar_style::-webkit-scrollbar-thumb {

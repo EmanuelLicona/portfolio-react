@@ -1,6 +1,7 @@
 import { IProject } from '../intefaces/IProject'
 
 export const ProjectCard = ({ project, openModal }: { project: IProject, openModal: (projectName: string) => void }) => {
+
   return (
     <article className="border min-[300px] max-h-[300px]  flex flex-col p-2
     bg-white/5 
@@ -16,8 +17,27 @@ export const ProjectCard = ({ project, openModal }: { project: IProject, openMod
       </p>
 
       <div className=' flex gap-3 mt-5'>
-        <a className='px-3 py-1 border rounded-md hover:bg-white/10' href="#">Github</a>
-        <a className='px-3 py-1 border rounded-md hover:bg-white/10' href="#">Demo</a>
+        {
+          project.urlCode &&
+          <a className='px-3 py-1 border rounded-md hover:bg-white/10' href={project.urlCode}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        }
+
+        {
+          project.urlDemo &&
+          <a className='px-3 py-1 border rounded-md hover:bg-white/10' href={project.urlDemo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Demo
+          </a>
+        }
+
+        
         <button className='px-3 py-1 border rounded-md hover:bg-white/10' onClick={() => openModal(project.name)}>Info</button>
       </div>
     </article>

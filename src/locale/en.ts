@@ -21,6 +21,7 @@ const en = {
     description4: 'Specialized in creating unique applications.'
   },
 
+
   // Section About
   aboutMe: {
     title: 'About me',
@@ -28,6 +29,10 @@ const en = {
       Hello, I am Abdiel Licona, a passionate 23-year-old Honduran developer with a comprehensive focus 
       on computer engineering. My experience spans both backend and frontend development, highlighting 
       my ability to create efficient and scalable technological solutions.`
+  },
+
+  portfolio: {
+    download: 'Download CV',
   },
 
   experience: {

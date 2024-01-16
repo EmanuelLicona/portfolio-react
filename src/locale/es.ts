@@ -46,6 +46,10 @@ const es = {
     }
   },
 
+  portfolio: {
+    download: 'Descargar CV',
+  },
+
   skills: {
     title: 'Habilidades tecnicas',
     content: {

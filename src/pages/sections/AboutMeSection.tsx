@@ -1,6 +1,10 @@
 import { useContext } from 'react'
 import { SectionContainer } from '../../components/SectionContainer'
 import { I18nContext } from '../../context/I18nProvider'
+import { FaBootstrap, FaJava, FaLaravel, FaNodeJs, FaReact, FaVuejs } from 'react-icons/fa'
+import { IoLogoJavascript } from 'react-icons/io'
+import { SiMariadbfoundation, SiMysql, SiNestjs, SiPhp, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import { BiLogoMongodb, BiLogoPostgresql } from 'react-icons/bi'
 
 export const AboutMeSection = () => {
 
@@ -35,13 +39,13 @@ export const AboutMeSection = () => {
       >
         {contextLang.t.translate("experience.title")}
 
-      </h4>
       <a
-        className=' text-xl text-pretty  border px-3 rounded-md hover:bg-white/10'
+        className=' text-xl text-pretty ms-4  border px-3 rounded-md hover:bg-white/10'
         href="/media/portfolio.pdf"
         target="_blank"
         rel="noopener noreferrer"
-      >Descargar</a>
+      >{contextLang.t.translate("portfolio.download")}</a>
+      </h4>
 
       <ol className="relative border-s border-gray-200 dark:border-purple-950 mt-12">
 
@@ -65,34 +69,67 @@ export const AboutMeSection = () => {
         <ul className=" flex flex-col gap-3 text-lg text-pretty font-normal text-gray-500 dark:text-gray-400 mt-2">
           <li>
             <span className='font-bold text-gray-300'>{contextLang.t.translate("skills.content.title1")}</span>
-            <p>{contextLang.t.translate("skills.content.description1")}</p>
+            {/* <p>{contextLang.t.translate("skills.content.description1")}</p> */}
+
+            <ul className='flex gap-6 mt-3'>
+              <li><FaJava className='text-5xl' /></li>
+
+              <li><IoLogoJavascript className='text-5xl' /></li>
+
+              <li><SiTypescript className='text-5xl' /></li>
+
+              <li><SiPhp className='text-5xl' /></li>
+
+            </ul>
           </li>
 
-          <li>
+          <li className='mt-3'>
             <span className='font-bold text-gray-300'>{contextLang.t.translate("skills.content.title2")}</span>
-            <p>{contextLang.t.translate("skills.content.description2")}</p>
+            {/* <p>{contextLang.t.translate("skills.content.description2")}</p> */}
+
+            <ul className='flex gap-6 mt-3'>
+
+              <li><FaReact className='text-5xl' /></li>
+              <li><FaVuejs className='text-5xl' /></li>
+              <li><FaBootstrap  className='text-5xl' /></li>
+              <li><SiTailwindcss  className='text-5xl' /></li>
+            </ul>
           </li>
 
           <li>
             <span className='font-bold text-gray-300'>{contextLang.t.translate("skills.content.title3")}</span>
-            <p>{contextLang.t.translate("skills.content.description3")}</p>
+            {/* <p>{contextLang.t.translate("skills.content.description3")}</p> */}
+
+            <ul className='flex gap-6 mt-3'>
+              <li><FaNodeJs className='text-5xl' /></li>
+              <li><SiNestjs className='text-5xl' /></li>
+              <li><FaLaravel  className='text-5xl' /></li>
+            </ul>
+
           </li>
 
           <li>
             <span className='font-bold text-gray-300'>{contextLang.t.translate("skills.content.title4")}</span>
-            <p>{contextLang.t.translate("skills.content.description4")}</p>
+            {/* <p>{contextLang.t.translate("skills.content.description4")}</p> */}
+
+            <ul className='flex gap-6 mt-3'>
+              <li><SiMysql className='text-5xl' /></li>
+              <li><BiLogoMongodb className='text-5xl' /></li>
+              <li><BiLogoPostgresql className='text-5xl' /></li>
+              <li><SiMariadbfoundation className='text-5xl' /></li>
+            </ul>
           </li>
 
-          <li>
+          <li className='mt-3'>
             <span className='font-bold text-gray-300'>{contextLang.t.translate("skills.content.aditional.title")}</span>
             <ul className='flex flex-col list-disc ps-6 gap-4'>
 
-              <li>
+              {/* <li>
                 <p>
                   <span className='font-bold text-gray-300'>{contextLang.t.translate("skills.content.aditional.subtitle1")} </span>
                   {contextLang.t.translate("skills.content.aditional.description1")}
                 </p>
-              </li>
+              </li> */}
 
               <li>
                 <p>

@@ -1,56 +1,37 @@
 import { useContext } from 'react'
-import { ModalContext } from '../context/ModalContext'
 import { IModalProject } from '../intefaces/IModalProject'
+import { ModalContext } from '../context/ModalContext'
 import { ImageCarousel } from './ImageCarousel'
 
 export const ModalProject = () => {
   const { closeModal, modalState }: { modalState: IModalProject, closeModal: () => void } = useContext(ModalContext)
 
   const { name, description, isOpen, technologies, images } = modalState
-
-
-
   const handleCloseModal = () => {
     closeModal()
   }
 
   return (
+    <div className={` ${isOpen ? '' : 'hidden'} fixed flex items-center justify-center inset-0 bg-black/50 z-50 text-black`}>
+      
+      <div className='relative w-full h-1/2 md:w-1/2 md:h-1/2 border mx-2 
+        md:mx-0 bg-white rounded-md
+         overflow-y-scroll scrollbar_style
+        '>
 
-    // Background
-    <div className={`${isOpen ? 'block ' : 'hidden'} fixed inset-0 z-40 bg-black/80`}>
+        <h1 className="text-2xl font-bold my-1 text-center">{name}</h1>
 
-      {/* Modal */}
-
-      <div className="
-          animate__animated
-          animate__fadeIn
-          absolute
-
-          w-full
-          h-1/2
-
-          top-1/2
-          left-1/2
-          -translate-x-1/2
-          -translate-y-1/2
-
-          sm:w-1/2 
-          sm:h-1/2
-
-          bg-white rounded-lg p-4 text-black z-50">
-        <h1 className="text-2xl font-bold mb-1 text-center">{name}</h1>
-
-        <div className='w-full max-h-[210px] mb-4'>
+        <div className='w-full mb-2'>
           <ImageCarousel images={images} />
         </div>
 
-        {/* Content */}
-        <div className=' h-[100px] sm:h-fit overflow-hidden  overflow-y-scroll  scrollbar_style '>
-          <p className=''>{description}</p>
+
+        <div className='h-fit'>
+          <p className='text-pretty  px-2'>{description}</p>
 
           {
             technologies.length > 0 &&
-            <ul className=" list-disc list-inside mt-5">
+            <ul className=" list-disc list-inside mt-1 px-2">
               {
                 technologies.map((tech) => (
                   <li key={tech}>{tech}</li>
@@ -60,14 +41,14 @@ export const ModalProject = () => {
           }
         </div>
 
+
+
         <button onClick={handleCloseModal}
           className="bg-purple-500 hover:bg-purple-700 text-white py-[1px] px-4 rounded
             absolute top-1 right-1
           "
         >x</button>
       </div>
-
-
     </div>
   )
 }
