@@ -14,7 +14,7 @@ const es = {
 
   // Section Main
   main: {
-    title: 'Hola, soy Emanuel Licona',
+    title: 'Hola, soy Abdiel Licona',
     description1: '+1 año de experiencia.',
     description2: 'Desarrollador Web Backend y Frontend.',
     description3: 'De La Ceiba, Honduras.',

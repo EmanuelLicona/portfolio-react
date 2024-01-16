@@ -1,11 +1,12 @@
 import { useContext } from 'react'
 import { ModalContext } from '../context/ModalContext'
 import { IModalProject } from '../intefaces/IModalProject'
+import { ImageCarousel } from './ImageCarousel'
 
 export const ModalProject = () => {
   const { closeModal, modalState }: { modalState: IModalProject, closeModal: () => void } = useContext(ModalContext)
 
-  const { name, description, isOpen, technologies } = modalState
+  const { name, description, isOpen, technologies, images } = modalState
 
   const handleCloseModal = () => {
     closeModal()
@@ -35,18 +36,19 @@ export const ModalProject = () => {
           sm:h-1/2
 
           bg-white rounded-lg p-4 text-black z-50">
-        <h1 className="text-2xl font-bold mb-4 text-center">{name}</h1>
+        <h1 className="text-2xl font-bold mb-1 text-center">{name}</h1>
 
-        <div className='w-full max-h-[220px] mb-4'>
-          <img className='w-full max-h-[200px]' src="https://placehold.co/300x180" alt="" />
+        <div className='w-full max-h-[210px] mb-4'>
+          <ImageCarousel images={images} />
         </div>
+
         {/* Content */}
-        <div className=' max-h-[140px] overflow-y-scroll scrollbar_style'>
-          <p>{description}</p>
+        <div className=' h-[100px] sm:h-fit overflow-hidden  overflow-y-scroll  scrollbar_style '>
+          <p className='  max-h-[20px]:'>{description}</p>
 
           {
             technologies.length > 0 &&
-            <ul className="list-disc list-inside mt-5">
+            <ul className=" list-disc list-inside mt-5">
               {
                 technologies.map((tech) => (
                   <li key={tech}>{tech}</li>
@@ -58,9 +60,9 @@ export const ModalProject = () => {
 
         <button onClick={handleCloseModal}
           className="bg-purple-500 hover:bg-purple-700 text-white py-[1px] px-4 rounded
-            absolute bottom-1 right-1
+            absolute top-1 right-1
           "
-        >Close</button>
+        >x</button>
       </div>
 
 

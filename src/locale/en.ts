@@ -14,7 +14,7 @@ const en = {
 
   // Section Main
   main: {
-    title: 'Hello, I am Emanuel Licona',
+    title: 'Hello, I am Abdiel Licona',
     description1: '+1 year of experience.',
     description2: 'Backend and Frontend Web Developer.',
     description3: 'From La Ceiba, Honduras.',
