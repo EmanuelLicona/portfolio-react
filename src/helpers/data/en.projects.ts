@@ -1,44 +1,17 @@
 export  const enProjects = [
   {
-    name: 'Portfolio1',
-    description: 'Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a, ',
-    urlCode: 'https://sudarshan.dev',
-    urlDemo: 'https://sudarshan.dev',
+    name: 'Law firm',
+    description: 'Management system for a law firm, allowing to keep track of users, clients, cases and documents.',
+    urlCode: 'https://github.com/EmanuelLicona/law_firm.git',
+    urlDemo: 'https://www.youtube.com/watch?v=Wwf2OnSiJEY',
     images: [
-      'https://placehold.co/300x180?text=Hello1',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1705505685/porfolio/lp6pktqgu8le8o9dterm.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1705505685/porfolio/qptd95sz2wzlglc7czbq.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1705505685/porfolio/ja3lghnaphoiosbdhim8.png'
     ],
     technologies: [
-      'React',
-      'Tailwind',
-      'Typescript'
-    ]
-  },
-  {
-    name: 'Portfolio2',
-    description: 'Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a, ',
-    urlCode: 'https://sudarshan.dev',
-    urlDemo: 'https://sudarshan.dev',
-    images: [
-      'https://placehold.co/300x180'
-    ],
-    technologies: [
-      'React',
-      'Tailwind',
-      'Typescript'
-    ]
-  },
-  {
-    name: 'Portfolio3',
-    description: 'Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a, ',
-    urlCode: 'https://sudarshan.dev',
-    urlDemo: 'https://sudarshan.dev',
-    images: [
-      'https://placehold.co/300x180'
-    ],
-    technologies: [
-      'React',
-      'Tailwind',
-      'Typescript'
+      'Java',
+      'SQL Server',
     ]
   },
 ]

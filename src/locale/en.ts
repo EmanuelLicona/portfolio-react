@@ -21,7 +21,6 @@ const en = {
     description4: 'Specialized in creating unique applications.'
   },
 
-
   // Section About
   aboutMe: {
     title: 'About me',

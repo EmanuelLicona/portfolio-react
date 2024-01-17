@@ -41,7 +41,7 @@ export const AboutMeSection = () => {
 
       <a
         className=' text-xl text-pretty ms-4  border px-3 rounded-md hover:bg-white/10'
-        href="/media/portfolio.pdf"
+        href="/media/porfolio.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >{contextLang.t.translate("portfolio.download")}</a>
