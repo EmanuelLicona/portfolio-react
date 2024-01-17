@@ -14,11 +14,11 @@ const en = {
 
   // Section Main
   main: {
-    title: 'Hello, I am Abdiel Licona',
+    title: "👋 Hi, I'm Abdiel",
     description1: '+1 year of experience.',
-    description2: 'Backend and Frontend Web Developer.',
-    description3: 'From La Ceiba, Honduras.',
-    description4: 'Specialized in creating unique applications.'
+    description2: 'Passionate about development ',
+    description3: 'Backend y Frontend. ',
+    description4: 'I love learning new things and experimenting with new technologies.'
   },
 
   // Section About

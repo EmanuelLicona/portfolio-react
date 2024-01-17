@@ -41,7 +41,7 @@ export const MainSection = () => {
             >
               { contextLang.t.translate("main.description2") }
               </span>
-            .<span className="text-red-800 dark:text-red-200">
+            <span className="text-red-800 dark:text-red-200">
               { contextLang.t.translate("main.description3") }
               </span
             >
