@@ -93,6 +93,13 @@ const es = {
 
   projects: {
     title: 'Proyectos destacados',
+  },
+
+  // Footer
+  footer: {
+    copyright: ' Todos los derechos reservados.',
+    about: 'Sobre mi',
+    contact: 'Contacto',
   }
 }
 

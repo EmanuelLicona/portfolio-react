@@ -15,6 +15,8 @@ export const ModalProject = () => {
     <div className={` ${isOpen ? '' : 'hidden'} fixed flex items-center justify-center inset-0 bg-black/50 z-50 text-black`}>
       
       <div className='relative w-full h-1/2 md:w-1/2 md:h-1/2 border mx-2 
+        animate__animated animate__fadeIn
+        animate__duration-300
         md:mx-0 bg-white rounded-md
          overflow-y-scroll scrollbar_style
         '>
@@ -26,7 +28,7 @@ export const ModalProject = () => {
         </div>
 
 
-        <div className='h-fit'>
+        <div className='h-fit mb-5'>
           <p className='text-pretty  px-2'>{description}</p>
 
           {

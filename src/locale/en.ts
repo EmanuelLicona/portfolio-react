@@ -92,6 +92,13 @@ const en = {
 
   projects: {
     title: 'Featured Projects',
+  },
+
+  // Footer
+  footer: {
+    copyright: ' All rights reserved.',
+    about: 'About me',
+    contact: 'Contact',
   }
 }
 
