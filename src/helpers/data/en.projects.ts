@@ -1,4 +1,25 @@
-export  const enProjects = [
+export const enProjects = [
+  {
+    name: 'Task kanban Manager',
+    description: 'This is an application made in React and Firebase for managing tasks stored in a workspace, in a kanban panel.',
+    urlCode: 'https://github.com/EmanuelLicona/trello-react.git',
+    urlDemo: 'https://youtu.be/r0_xSBqwzM8',
+    images: [
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/oosvddjqer4jiq5lbthh.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/jhipppjakfe0alch1u75.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/g4k1ftazy523ssrgo0r2.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/xrbukv0ifdfsmm1vf8by.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/qbegkr22jaglshsm2v6m.png',
+    ],
+    technologies: [
+      'Firebase',
+      'React',
+      'Typescript',
+      'Redux',
+      'React-Router',
+    ]
+  },
+
   {
     name: 'Law firm',
     description: 'Management system for a law firm, allowing to keep track of users, clients, cases and documents.',

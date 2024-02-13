@@ -1,5 +1,26 @@
 export const esProjects = [
   {
+    name: 'Task kanban Manager',
+    description: 'Esta es una aplicación realizada en React y Firebase para la gestión de tareas almacenadas en un espacio de trabajo, en un panel kanban.',
+    urlCode: 'https://github.com/EmanuelLicona/trello-react.git',
+    urlDemo: 'https://youtu.be/r0_xSBqwzM8',
+    images: [
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/oosvddjqer4jiq5lbthh.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/jhipppjakfe0alch1u75.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/g4k1ftazy523ssrgo0r2.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/xrbukv0ifdfsmm1vf8by.png',
+      'https://res.cloudinary.com/dpmgcgld2/image/upload/v1707790921/porfolio/kanban_app/qbegkr22jaglshsm2v6m.png',
+    ],
+    technologies: [
+      'Firebase',
+      'React',
+      'Typescript',
+      'Redux',
+      'React-Router',
+    ]
+  },
+
+  {
     name: 'Bufete de abogados',
     description: 'Sistema de gestión de un bufete de abogados, permitiendo llevar el control de usuarios, clientes, casos y documentos.',
     urlCode: 'https://github.com/EmanuelLicona/law_firm.git',
@@ -36,5 +57,5 @@ export const esProjects = [
       'MySQL',
     ]
   },
-  
+
 ]
